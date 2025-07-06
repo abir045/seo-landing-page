@@ -72,7 +72,7 @@ const Footer = () => {
           <h3 className="text-[20px] text-white font-semibold mb-[28px]">
             Subscribe to our newsletter
           </h3>
-          <div className="flex items-center w-full max-w-[300px] mx-auto lg:mx-0">
+          <div className="flex items-center w-full  mx-auto lg:mx-0">
             <input
               type="email"
               className="py-3 px-4 bg-white text-[#0E1520] text-base font-inter flex-1 rounded-l-[8px] outline-none min-w-0"
