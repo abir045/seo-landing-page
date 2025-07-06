@@ -16,8 +16,9 @@ import { AiOutlineFire } from "react-icons/ai";
 import { BiSupport } from "react-icons/bi";
 import { FiUser } from "react-icons/fi";
 import { IoSettingsOutline } from "react-icons/io5";
-import Image from "next/image";
+
 import logo from "../../public/images/Logo.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const [accountMenuOpen, setAccountMenuOpen] = useState(false);
@@ -25,6 +26,18 @@ const Navbar = () => {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [isMegaMenuCollapse, setIsMegaMenuCollapse] = useState(false);
   const [megaMenuSubItemsOpen, setMegaMenuSubItemsOpen] = useState("");
+
+  // Function to handle mobile menu item clicks
+  const handleMobileMenuClick = (href) => {
+    setMobileSidebarOpen(false);
+    // Optional: Add smooth scrolling
+    if (href.startsWith("#")) {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   return (
     <nav className="flex items-center justify-between w-full relative max-w-[1290px] mx-auto my-5 px-4 lg:px-0">
@@ -197,26 +210,38 @@ const Navbar = () => {
             } overflow-hidden transition-all duration-300 w-full bg-[#EFEFEF] p-1`}
           >
             <div className="ml-2 space-y-2">
-              <div className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
+              <div
+                className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300"
+                onClick={() => handleMobileMenuClick("#services")}
+              >
                 <div>
                   <h4 className="font-medium text-sm">
                     On-page SEO and Technical Audit
                   </h4>
                 </div>
               </div>
-              <div className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
+              <div
+                className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300"
+                onClick={() => handleMobileMenuClick("#services")}
+              >
                 <div>
                   <h4 className="font-medium text-sm">Tailored local seo</h4>
                 </div>
               </div>
-              <div className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
+              <div
+                className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300"
+                onClick={() => handleMobileMenuClick("#services")}
+              >
                 <div>
                   <h4 className="font-medium text-sm">
                     Expert technical seo suggestions
                   </h4>
                 </div>
               </div>
-              <div className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
+              <div
+                className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300"
+                onClick={() => handleMobileMenuClick("#services")}
+              >
                 <div>
                   <h4 className="font-medium text-sm">
                     High-quality backlink building
@@ -226,29 +251,34 @@ const Navbar = () => {
             </div>
           </div>
 
-          <a href="#work">
-            <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
-              Our Work
-            </li>
-          </a>
+          {/* Fixed mobile navigation links */}
+          <li
+            className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full"
+            onClick={() => handleMobileMenuClick("#work")}
+          >
+            Our Work
+          </li>
 
-          <a href="#about">
-            <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
-              About Us
-            </li>
-          </a>
+          <li
+            className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full"
+            onClick={() => handleMobileMenuClick("#about")}
+          >
+            About Us
+          </li>
 
-          <a href="#contact">
-            <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
-              Careers
-            </li>
-          </a>
+          <li
+            className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full"
+            onClick={() => handleMobileMenuClick("#contact")}
+          >
+            Careers
+          </li>
 
-          <a href="#blog">
-            <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
-              Blog
-            </li>
-          </a>
+          <li
+            className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full"
+            onClick={() => handleMobileMenuClick("#blog")}
+          >
+            Blog
+          </li>
         </ul>
 
         {/* Mobile Contact Button */}
