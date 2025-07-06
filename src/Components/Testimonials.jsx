@@ -151,28 +151,30 @@ const Testimonials = () => {
           </Swiper>
         </div>
 
-        <div className="flex items-center justify-between mt-20 max-w-3xl mx-auto">
-          <div>
-            <p className="font-semibold text-[56px] leading-[58px] text-[#0A0D14]">
+        <div className="flex flex-col sm:flex-row items-center justify-between mt-20 max-w-3xl mx-auto gap-8 sm:gap-4 px-4">
+          <div className="text-center sm:text-left">
+            <p className="font-semibold text-[32px] sm:text-[48px] lg:text-[56px] leading-[34px] sm:leading-[50px] lg:leading-[58px] text-[#0A0D14]">
               560+
             </p>
-            <p className="font-inter text-[#525866] text-lg">
+            <p className="font-inter text-[#525866] text-base sm:text-lg">
               Satisfied Customers
             </p>
           </div>
           {/* 2nd */}
-          <div>
-            <p className="font-semibold text-[56px] leading-[58px] text-[#0A0D14]">
+          <div className="text-center sm:text-left">
+            <p className="font-semibold text-[32px] sm:text-[48px] lg:text-[56px] leading-[34px] sm:leading-[50px] lg:leading-[58px] text-[#0A0D14]">
               256+
             </p>
-            <p className="font-inter text-[#525866] text-lg">5 star reviews</p>
+            <p className="font-inter text-[#525866] text-base sm:text-lg">
+              5 star reviews
+            </p>
           </div>
           {/* 3rd */}
-          <div>
-            <p className="font-semibold text-[56px] leading-[58px] text-[#0A0D14]">
+          <div className="text-center sm:text-left">
+            <p className="font-semibold text-[32px] sm:text-[48px] lg:text-[56px] leading-[34px] sm:leading-[50px] lg:leading-[58px] text-[#0A0D14]">
               100 %
             </p>
-            <p className="font-inter text-[#525866] text-lg">
+            <p className="font-inter text-[#525866] text-base sm:text-lg">
               Recommendation Rate
             </p>
           </div>
