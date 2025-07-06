@@ -98,22 +98,33 @@ const Navbar = () => {
             </div>
           </li>
 
-          <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
-            Our Work
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span>
-          </li>
-          <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
-            About Us
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span>
-          </li>
-          <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
-            Careers
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span>
-          </li>
-          <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
-            Blog
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span>
-          </li>
+          <a href="#work">
+            <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
+              Our Work
+              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span> */}
+            </li>
+          </a>
+
+          <a href="#about">
+            <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
+              About Us
+              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span> */}
+            </li>
+          </a>
+
+          <a href="#contact">
+            <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
+              Careers
+              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span> */}
+            </li>
+          </a>
+
+          <a href="#blog">
+            <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
+              Blog
+              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span> */}
+            </li>
+          </a>
         </ul>
       </div>
 
@@ -207,18 +218,29 @@ const Navbar = () => {
             </div>
           </div>
 
-          <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
-            Our Work
-          </li>
-          <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
-            About Us
-          </li>
-          <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
-            Careers
-          </li>
-          <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
-            Blog
-          </li>
+          <a href="#work">
+            <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
+              Our Work
+            </li>
+          </a>
+
+          <a href="#about">
+            <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
+              About Us
+            </li>
+          </a>
+
+          <a href="#contact">
+            <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
+              Careers
+            </li>
+          </a>
+
+          <a href="#blog">
+            <li className="hover:text-[#3B9DF8] dark:text-[#abc2d3] transition-all duration-300 cursor-pointer capitalize p-3 rounded-lg hover:bg-blue-50 w-full">
+              Blog
+            </li>
+          </a>
         </ul>
 
         {/* Mobile Contact Button */}

@@ -1,3 +1,4 @@
+import Blog from "@/Components/Blog";
 import Contact from "@/Components/Contact";
 import FAQ from "@/Components/FAQ";
 import Hero from "@/Components/Hero";
@@ -17,6 +18,7 @@ export default function Home() {
       <Ways />
       <Testimonials />
       <Contact />
+      <Blog />
     </div>
   );
 }

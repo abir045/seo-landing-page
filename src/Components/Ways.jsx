@@ -2,7 +2,10 @@ import React from "react";
 
 const Ways = () => {
   return (
-    <div className="bg-[#EBF1FF] w-11/12 mx-auto rounded-[24px] mb-32">
+    <div
+      id="about"
+      className="bg-[#EBF1FF] w-11/12 mx-auto rounded-[24px] mb-32"
+    >
       <h1 className="font-semibold text-[50px] text-center text-[#0A0D14] pt-[100px]">
         The Way We Do It !
       </h1>
@@ -13,7 +16,7 @@ const Ways = () => {
       </p>
 
       {/* cards */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:px-28 px-4 md:px-12 mt-16 pb-32 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:px-28 px-4 md:px-12 mt-16 pb-32 gap-6 max-w-[1290px] mx-auto">
         {/* 1st card */}
         <div className="bg-[#FFFFFF] rounded-[12px] flex items-baseline gap-4 pb-[58px] px-6 hover:shadow-lg hover:shadow-gray-200/50 hover:-translate-y-1 transition-all duration-300 cursor-pointer">
           <div className="w-[42px] h-[42px] bg-[#FDE9C7] rounded-full flex items-center justify-center text-[#20232D] font-medium text-2xl px-[15px] py-[14px]">

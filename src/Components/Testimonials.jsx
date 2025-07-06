@@ -56,7 +56,7 @@ const Testimonials = () => {
 
   return (
     <div className="pb-16">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-[1290px] mx-auto px-4">
         <h1 className="font-semibold text-[50px] text-center text-[#0A0D14] mt-32">
           Hear From Our Clients
         </h1>
@@ -149,6 +149,33 @@ const Testimonials = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+
+        <div className="flex items-center justify-between mt-20 max-w-3xl mx-auto">
+          <div>
+            <p className="font-semibold text-[56px] leading-[58px] text-[#0A0D14]">
+              560+
+            </p>
+            <p className="font-inter text-[#525866] text-lg">
+              Satisfied Customers
+            </p>
+          </div>
+          {/* 2nd */}
+          <div>
+            <p className="font-semibold text-[56px] leading-[58px] text-[#0A0D14]">
+              256+
+            </p>
+            <p className="font-inter text-[#525866] text-lg">5 star reviews</p>
+          </div>
+          {/* 3rd */}
+          <div>
+            <p className="font-semibold text-[56px] leading-[58px] text-[#0A0D14]">
+              100 %
+            </p>
+            <p className="font-inter text-[#525866] text-lg">
+              Recommendation Rate
+            </p>
+          </div>
         </div>
       </div>
 

@@ -5,9 +5,10 @@ import seo from "../../public/images/seo.png";
 import analyze from "../../public/images/analyze.png";
 import graph from "../../public/images/graph.png";
 import expert from "../../public/images/expert.png";
+
 const TopPick = () => {
   return (
-    <div className="max-w-[1290px] mx-auto px-4 sm:px-6">
+    <div id="work" className="max-w-[1290px] mx-auto px-4 sm:px-6">
       <h1 className="text-center font-semibold text-[32px] sm:text-[40px] lg:text-[50px] text-[#0A0D14] leading-[38px] sm:leading-[48px] lg:leading-[58px] mt-[60px] sm:mt-[80px] lg:mt-[100px]">
         Why We're the Top Pick
       </h1>
@@ -22,7 +23,7 @@ const TopPick = () => {
       {/* grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-8 sm:mt-12 lg:mt-16 mb-10">
         {/* Left side - Empowering digital success */}
-        <div className="bg-[#FEF7EC] rounded-[16px] w-full">
+        <div className="bg-[#FEF7EC] rounded-[16px] w-full hover:shadow-lg hover:shadow-orange-200/50 transition-all duration-300 hover:scale-[1.02]">
           <h3 className="font-medium text-[20px] sm:text-[24px] lg:text-[28px] text-[#0A0D14] mt-6 sm:mt-8 w-full p-4 sm:p-5">
             Empowering your digital success
           </h3>
@@ -36,7 +37,7 @@ const TopPick = () => {
           {/* Cards */}
           <div className="space-y-3 mt-6 sm:mt-8 lg:mt-[42px] mb-4 sm:mb-6 mx-4 sm:mx-[20px]">
             {/* 1st card */}
-            <div className="bg-[#FFFCF9] rounded-[10px] border-2 border-white flex items-center justify-between p-2 sm:p-3">
+            <div className="bg-[#FFFCF9] rounded-[10px] border-2 border-white flex items-center justify-between p-2 sm:p-3 hover:shadow-md hover:border-green-200 transition-all duration-300 cursor-pointer hover:scale-[1.01]">
               <div className="flex items-center gap-2 sm:gap-3">
                 <Image
                   src={search}
@@ -44,21 +45,21 @@ const TopPick = () => {
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
                 <div>
-                  <p className="font-semibold text-[#392D50] text-sm sm:text-base">
+                  <p className="font-semibold text-[#392D50] text-base font-manrope  sm:text-base">
                     Understanding of SEO
                   </p>
-                  <p className="text-[12px] sm:text-[14px] font-inter text-[#615874]">
+                  <p className="text-sm  font-inter text-[#615874]">
                     Keywords, meta tags optimization
                   </p>
                 </div>
               </div>
-              <button className="bg-[#CBF5E599] opacity-60 text-[#38C793] font-inter font-medium text-[12px] sm:text-[15px] p-2 sm:p-[10px] rounded-[8px] whitespace-nowrap">
+              <button className="bg-[#CBF5E599] opacity-60 text-[#38C793] font-inter font-medium text-[12px] sm:text-[15px] p-2 sm:p-[10px] rounded-[8px] whitespace-nowrap hover:opacity-80 hover:bg-[#CBF5E5] transition-all duration-300">
                 Selected
               </button>
             </div>
 
             {/* 2nd card */}
-            <div className="bg-[#FFFCF9] rounded-[10px] border-2 border-white flex items-center justify-between p-2 sm:p-3">
+            <div className="bg-[#FFFCF9] rounded-[10px] border-2 border-white flex items-center justify-between p-2 sm:p-3 hover:shadow-md hover:border-orange-200 transition-all duration-300 cursor-pointer hover:scale-[1.01]">
               <div className="flex items-center gap-2 sm:gap-3">
                 <Image
                   src={scissor}
@@ -66,39 +67,39 @@ const TopPick = () => {
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
                 <div>
-                  <p className="font-semibold text-[#392D50] text-sm sm:text-base">
+                  <p className="font-semibold text-[#392D50] text-base font-manrope sm:text-base">
                     Crafting tailored content
                   </p>
-                  <p className="font-inter text-[#615874] text-[12px] sm:text-sm">
+                  <p className="font-inter text-[#615874] text-sm ">
                     Tailored to your audiences intent
                   </p>
                 </div>
               </div>
-              <button className="bg-[#FCF1E1] text-[#F2AE40] font-inter font-medium text-[12px] sm:text-[15px] p-2 sm:p-[10px] rounded-[8px] whitespace-nowrap">
+              <button className="bg-[#FCF1E1] text-[#F2AE40] font-inter font-medium text-[12px] sm:text-[15px] p-2 sm:p-[10px] rounded-[8px] whitespace-nowrap hover:bg-[#F2AE40] hover:text-white transition-all duration-300">
                 Selected
               </button>
             </div>
 
             {/* 3rd card */}
-            <div className="bg-[#FFFCF9] rounded-[10px] border-2 border-white flex items-center justify-between p-2 sm:p-3">
+            <div className="bg-[#FFFCF9] rounded-[10px] border-2 border-white flex items-center justify-between p-2 sm:p-3 hover:shadow-md hover:border-green-200 transition-all duration-300 cursor-pointer hover:scale-[1.01]">
               <div className="flex items-center gap-2 sm:gap-3">
                 <Image src={seo} alt="seo" className="w-6 h-6 sm:w-8 sm:h-8" />
                 <div>
-                  <p className="font-semibold text-[#392D50] text-sm sm:text-base">
+                  <p className="font-semibold text-[#392D50] text-base font-manrope sm:text-base">
                     Utilizing SEO strategies
                   </p>
-                  <p className="font-inter text-[#615874] text-[12px] sm:text-sm">
+                  <p className="font-inter text-[#615874] text-sm ">
                     Such as social media engagement
                   </p>
                 </div>
               </div>
-              <button className="bg-[#CBF5E599] opacity-60 text-[#38C793] font-inter font-medium text-[12px] sm:text-[15px] p-2 sm:p-[10px] rounded-[8px] whitespace-nowrap">
+              <button className="bg-[#CBF5E599] opacity-60 text-[#38C793] font-inter font-medium text-[12px] sm:text-[15px] p-2 sm:p-[10px] rounded-[8px] whitespace-nowrap hover:opacity-80 hover:bg-[#CBF5E5] transition-all duration-300">
                 Selected
               </button>
             </div>
 
             {/* 4th card */}
-            <div className="bg-[#FFFCF9] rounded-[10px] border-2 border-white flex items-center justify-between p-2 sm:p-3">
+            <div className="bg-[#FFFCF9] rounded-[10px] border-2 border-white flex items-center justify-between p-2 sm:p-3 hover:shadow-md hover:border-orange-200 transition-all duration-300 cursor-pointer hover:scale-[1.01]">
               <div className="flex items-center gap-2 sm:gap-3">
                 <Image
                   src={analyze}
@@ -106,15 +107,15 @@ const TopPick = () => {
                   className="w-6 h-6 sm:w-8 sm:h-8"
                 />
                 <div>
-                  <p className="font-semibold text-[#392D50] text-sm sm:text-base">
+                  <p className="font-semibold text-[#392D50] font-manrope text-base sm:text-base">
                     Analyzing SEO metrics
                   </p>
-                  <p className="font-inter text-[#615874] text-[12px] sm:text-sm">
+                  <p className="font-inter text-[#615874] text-sm">
                     To identify areas for improvement
                   </p>
                 </div>
               </div>
-              <button className="bg-[#FCF1E1] text-[#F2AE40] font-inter font-medium text-[12px] sm:text-[15px] p-2 sm:p-[10px] rounded-[8px] whitespace-nowrap">
+              <button className="bg-[#FCF1E1] text-[#F2AE40] font-inter font-medium text-[12px] sm:text-[15px] p-2 sm:p-[10px] rounded-[8px] whitespace-nowrap hover:bg-[#F2AE40] hover:text-white transition-all duration-300">
                 Selected
               </button>
             </div>
@@ -124,7 +125,7 @@ const TopPick = () => {
         {/* Right side - Stacked cards */}
         <div className="space-y-6 col-span-2">
           {/* First comprehensive card */}
-          <div className="bg-[#EFFAF6] rounded-[16px] overflow-hidden">
+          <div className="bg-[#EFFAF6] rounded-[16px] overflow-hidden hover:shadow-xl hover:shadow-green-200/30 transition-all duration-300 hover:scale-[1.01] cursor-pointer">
             <div className="flex flex-col sm:flex-row items-center">
               {/* Content */}
               <div className="px-4 sm:px-6 lg:px-[28px] py-6 sm:py-8 lg:py-0 lg:mt-[52px] flex-1">
@@ -143,14 +144,14 @@ const TopPick = () => {
                 <Image
                   alt="chart"
                   src={graph}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>
           </div>
 
           {/* Second comprehensive card */}
-          <div className="bg-[#EEEBFF] rounded-[16px] overflow-hidden">
+          <div className="bg-[#EEEBFF] rounded-[16px] overflow-hidden hover:shadow-xl hover:shadow-purple-200/30 transition-all duration-300 hover:scale-[1.01] cursor-pointer">
             <div className="flex flex-col sm:flex-row items-center">
               {/* Content */}
               <div className="px-4 sm:px-6 lg:px-[28px] py-6 sm:py-8 lg:py-0 lg:mt-[52px] flex-1">
@@ -169,7 +170,7 @@ const TopPick = () => {
                 <Image
                   alt="chart"
                   src={expert}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
             </div>

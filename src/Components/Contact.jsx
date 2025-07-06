@@ -62,7 +62,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-[#EBF1FF] rounded-[24px] w-11/12 mx-auto mb-12">
+    <div
+      id="contact"
+      className="bg-[#EBF1FF] rounded-[24px] w-11/12 mx-auto mb-12"
+    >
       <div className="flex flex-col lg:flex-row items-start justify-between gap-8 lg:gap-28 px-6 sm:px-12 lg:px-28 py-12 lg:py-[100px]">
         {/* left */}
         <div className="w-full lg:w-auto">
