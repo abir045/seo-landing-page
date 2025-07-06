@@ -96,7 +96,7 @@ const Hero = () => {
             />
           </div>
 
-          <div className="flex p-2 items-center gap-[10px] bg-white rounded-[80px] absolute md:bottom-[15%] bottom-[5%] md:left-[50%] left-[20%] hover:scale-105 transition-transform duration-300 animate-fadeInUp">
+          <div className="flex p-2 items-center gap-[10px] bg-white rounded-[80px] absolute md:bottom-[15%] bottom-[1%]  md:left-[50%] left-[20%] hover:scale-105 transition-transform duration-300 animate-fadeInUp">
             <Image
               src={smile}
               alt="up"
