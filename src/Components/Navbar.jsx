@@ -42,7 +42,7 @@ const Navbar = () => {
             className={`${
               isProductHover
                 ? "text-[#3B9DF8]"
-                : "dark:text-[#abc2d3] text-gray-600"
+                : "dark:text-[#abc2d3] text-[#0A0D14]"
             } flex items-center gap-[5px] cursor-pointer relative group transition-all duration-300 hover:text-[#3B9DF8]`}
             onMouseEnter={() => setIsProductHover(true)}
             onMouseLeave={() => setIsProductHover(false)}
@@ -67,7 +67,7 @@ const Navbar = () => {
                     <li className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
                       <div>
                         <a href="#services">
-                          <h4 className="font-medium text-sm">
+                          <h4 className="font-medium text-[20px]">
                             On-page SEO and Technical Audit
                           </h4>
                         </a>
@@ -76,7 +76,7 @@ const Navbar = () => {
                     <li className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
                       <div>
                         <a href="#services">
-                          <h4 className="font-medium text-sm">
+                          <h4 className="font-medium text-[20px]">
                             Tailored local seo
                           </h4>
                         </a>
@@ -85,7 +85,7 @@ const Navbar = () => {
                     <li className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
                       <div>
                         <a href="#services">
-                          <h4 className="font-medium text-sm">
+                          <h4 className="font-medium text-[20px]">
                             Expert technical seo suggestions
                           </h4>
                         </a>
@@ -94,7 +94,7 @@ const Navbar = () => {
                     <li className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
                       <div>
                         <a href="#services">
-                          <h4 className="font-medium text-sm">
+                          <h4 className="font-medium text-[20px]">
                             High-quality backlink building
                           </h4>
                         </a>
@@ -107,30 +107,30 @@ const Navbar = () => {
           </li>
 
           <a href="#work">
-            <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
+            <li className="flex items-center font-medium dark:text-[#abc2d3] text-[#0A0D14] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
               Our Work
-              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span> */}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span>
             </li>
           </a>
 
           <a href="#about">
-            <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
+            <li className="flex items-center font-medium dark:text-[#abc2d3] text-[#0A0D14] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
               About Us
-              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span> */}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span>
             </li>
           </a>
 
           <a href="#contact">
-            <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
+            <li className="flex items-center font-medium dark:text-[#abc2d3] text-[#0A0D14] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
               Careers
-              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span> */}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span>
             </li>
           </a>
 
           <a href="#blog">
-            <li className="flex items-center dark:text-[#abc2d3] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
+            <li className="flex font-medium items-center dark:text-[#abc2d3] text-[#0A0D14] hover:text-[#3B9DF8] group gap-[5px] cursor-pointer transition-all duration-300 relative">
               Blog
-              {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span> */}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#3B9DF8] transition-all duration-300 group-hover:w-full"></span>
             </li>
           </a>
         </ul>

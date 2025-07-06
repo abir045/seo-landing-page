@@ -78,7 +78,7 @@ const Footer = () => {
               className="py-3 px-4 bg-white text-[#0E1520] text-base font-inter flex-1 rounded-l-[8px] outline-none min-w-0"
               placeholder="Enter your email address"
             />
-            <button className="text-white bg-[#375DFB] px-4 sm:px-6 py-3 rounded-r-[8px] font-inter font-semibold whitespace-nowrap text-sm sm:text-base">
+            <button className="text-white bg-[#375DFB] px-4 sm:px-6 py-4 rounded-r-[8px] font-inter font-semibold whitespace-nowrap text-sm sm:text-base">
               Subscribe
             </button>
           </div>
