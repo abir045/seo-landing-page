@@ -50,46 +50,72 @@ const Services = () => {
       },
     },
   ];
+
   return (
-    <div className="bg-[#EBF1FF] rounded-[24px] w-11/12 mx-auto">
-      <div className="flex items-center justify-center  pt-[100px]">
-        <Image src={p1} alt="profile" />
-        <Image src={p2} alt="profile" className="-ml-2" />
-        <Image src={p3} alt="profile" className="-ml-2" />
-        <Image src={p4} alt="profile" className="-ml-2" />
-        <Image src={p5} alt="profile" className="-ml-2" />
+    <div className="bg-[#EBF1FF] rounded-[12px] lg:rounded-[24px] w-full px-4 sm:px-6 lg:w-11/12 mx-auto">
+      {/* Profile Images */}
+      <div className="flex items-center justify-center pt-[50px] sm:pt-[70px] lg:pt-[100px]">
+        <div className="flex items-center">
+          <Image
+            src={p1}
+            alt="profile"
+            className="w-12 h-12 sm:w-16 sm:h-16 lg:w-auto lg:h-auto rounded-full"
+          />
+          <Image
+            src={p2}
+            alt="profile"
+            className="w-12 h-12 sm:w-16 sm:h-16 lg:w-auto lg:h-auto rounded-full -ml-2"
+          />
+          <Image
+            src={p3}
+            alt="profile"
+            className="w-12 h-12 sm:w-16 sm:h-16 lg:w-auto lg:h-auto rounded-full -ml-2"
+          />
+          <Image
+            src={p4}
+            alt="profile"
+            className="w-12 h-12 sm:w-16 sm:h-16 lg:w-auto lg:h-auto rounded-full -ml-2"
+          />
+          <Image
+            src={p5}
+            alt="profile"
+            className="w-12 h-12 sm:w-16 sm:h-16 lg:w-auto lg:h-auto rounded-full -ml-2"
+          />
+        </div>
       </div>
 
-      <h1 className="font-semibold text-[50px] leading-[58px] text-[#0A0D14] mt-6 text-center">
+      {/* Heading */}
+      <h1 className="font-semibold text-[28px] sm:text-[36px] lg:text-[50px] leading-[32px] sm:leading-[42px] lg:leading-[58px] text-[#0A0D14] mt-4 sm:mt-6 text-center px-4">
         Here's what we bring to the table
       </h1>
 
-      <p className="font-inter text-center text-[#525866] leading-[26px] max-w-2xl mx-auto mt-5">
+      {/* Description */}
+      <p className="font-inter text-center text-[#525866] text-sm sm:text-base leading-[22px] sm:leading-[26px] max-w-xl lg:max-w-2xl mx-auto mt-4 lg:mt-5 px-4">
         Discover our winning combination of expertise, tailor-made strategies,
         transparency, and proven results. We're not just your average SEO
         service; we're your digital partners, serving up a recipe for online
         success.
       </p>
 
-      {/* tab component */}
-      <div className="py-16 px-6">
-        <div className="">
-          <div className="flex gap-6 items-start max-w-[1290px] mx-auto">
+      {/* Tab Component */}
+      <div className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6">
+        <div className="max-w-[1290px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-6 items-start">
             {/* Left side - Services */}
-            <div className="space-y-6 max-w-[350px]">
+            <div className="w-full lg:max-w-[350px] space-y-4 lg:space-y-6">
               {/* Service tabs */}
-              <div className="space-y-[14px]">
+              <div className="space-y-3 lg:space-y-[14px]">
                 {services.map((service, index) => (
                   <button
                     key={index}
                     onClick={() => setActiveTab(index)}
-                    className={`w-full text-left px-[20px] py-[16px] rounded-lg transition-all duration-300 ${
+                    className={`w-full text-left px-4 sm:px-[20px] py-3 sm:py-[16px] rounded-lg transition-all duration-300 ${
                       activeTab === index
                         ? "bg-[#375DFB] text-white shadow-lg"
                         : "bg-white text-[#0A0D14] hover:bg-gray-100"
                     }`}
                   >
-                    <span className="font-medium text-[20px]">
+                    <span className="font-medium text-base sm:text-lg lg:text-[20px]">
                       {service.title}
                     </span>
                   </button>
@@ -98,25 +124,25 @@ const Services = () => {
             </div>
 
             {/* Right side - Content and Image */}
-            <div className="flex items-start w-full  bg-white pt-[42px] rounded-[12px] pb-12">
+            <div className="flex flex-col lg:flex-row items-start w-full bg-white lg:pt-[42px] rounded-[12px] lg:pb-12">
               {/* Content Panel */}
-              <div className="px-[42px] max-w-[528px]">
-                <h2 className="text-2xl font-bold text-gray-800 mb-4 capitalize">
+              <div className="px-4 sm:px-6 lg:px-[42px] py-6 sm:py-8 lg:py-0 w-full lg:max-w-[528px]">
+                <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-3 sm:mb-4 capitalize">
                   {services[activeTab].title}
                 </h2>
-                <div className="space-y-4 text-gray-600 leading-relaxed">
+                <div className="space-y-3 sm:space-y-4 text-gray-600 text-sm sm:text-base leading-relaxed">
                   <p>{services[activeTab].content.description}</p>
                   <p>{services[activeTab].content.additionalInfo}</p>
                 </div>
               </div>
 
               {/* Consultant Image */}
-              <div className="w-full h-full">
+              <div className="w-full h-full lg:flex-1">
                 <div className="rounded-lg">
                   <Image
                     src={serviceImg}
                     alt="consultant"
-                    className=" object-cover"
+                    className="object-cover w-full"
                   />
                 </div>
               </div>
@@ -125,8 +151,9 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <button className="px-[30px] py-[18px] font-semibold text-white bg-[#375DFB] rounded-[6px] mb-[120px]">
+      {/* CTA Button */}
+      <div className="flex justify-center pb-16 sm:pb-20 lg:pb-[120px]">
+        <button className="px-6 sm:px-8 lg:px-[30px] py-3 sm:py-4 lg:py-[18px] font-semibold text-white bg-[#375DFB] rounded-[6px] text-sm sm:text-base">
           Request a Proposal
         </button>
       </div>
