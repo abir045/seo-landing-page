@@ -52,7 +52,10 @@ const Services = () => {
   ];
 
   return (
-    <div className="bg-[#EBF1FF] rounded-[12px] lg:rounded-[24px] w-full px-4 sm:px-6 lg:w-11/12 mx-auto">
+    <div
+      id="services"
+      className="bg-[#EBF1FF] rounded-[12px] lg:rounded-[24px] w-full px-4 sm:px-6 lg:w-11/12 mx-auto"
+    >
       {/* Profile Images */}
       <div className="flex items-center justify-center pt-[50px] sm:pt-[70px] lg:pt-[100px]">
         <div className="flex items-center">

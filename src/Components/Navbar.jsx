@@ -66,30 +66,38 @@ const Navbar = () => {
                   <ul className="">
                     <li className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
                       <div>
-                        <h4 className="font-medium text-sm">
-                          On-page SEO and Technical Audit
-                        </h4>
+                        <a href="#services">
+                          <h4 className="font-medium text-sm">
+                            On-page SEO and Technical Audit
+                          </h4>
+                        </a>
                       </div>
                     </li>
                     <li className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
                       <div>
-                        <h4 className="font-medium text-sm">
-                          Tailored local seo
-                        </h4>
+                        <a href="#services">
+                          <h4 className="font-medium text-sm">
+                            Tailored local seo
+                          </h4>
+                        </a>
                       </div>
                     </li>
                     <li className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
                       <div>
-                        <h4 className="font-medium text-sm">
-                          Expert technical seo suggestions
-                        </h4>
+                        <a href="#services">
+                          <h4 className="font-medium text-sm">
+                            Expert technical seo suggestions
+                          </h4>
+                        </a>
                       </div>
                     </li>
                     <li className="flex items-center text-[#0A0D14] hover:text-[#375DFB] group gap-[10px] cursor-pointer p-3 rounded-lg hover:bg-[#FFFFFF] transition-all duration-300">
                       <div>
-                        <h4 className="font-medium text-sm">
-                          High-quality backlink building
-                        </h4>
+                        <a href="#services">
+                          <h4 className="font-medium text-sm">
+                            High-quality backlink building
+                          </h4>
+                        </a>
                       </div>
                     </li>
                   </ul>
