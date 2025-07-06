@@ -67,7 +67,11 @@ const Hero = () => {
         </div>
         {/* right */}
         <div className="lg:w-full relative md:px-10 md:mt-20 mt-14 lg:mt-0 lg:px-0 w-11/12 mx-auto ">
-          <Image alt="background" src={bg} className="w-[633px] h-[447px]" />
+          <Image
+            alt="background"
+            src={bg}
+            className="w-[633px] h-[447px] object-cover"
+          />
 
           {/* <div className="lg:-mt-[95%] -mt-[135%] md:-mt-[85%] ml-[26%]">
             <Image alt="twiiter" src={tw} />
@@ -84,11 +88,11 @@ const Hero = () => {
             <Image src={google} alt="google" />
           </div> */}
 
-          <div className="absolute bottom-[10%] lg:-left-[15%] md:-left-[8%] -left-[22%]">
+          <div className="absolute bottom-[10%] lg:-left-[15%] md:-left-[8%] -left-[22%] ">
             <Image
               src={google}
               alt="google"
-              className="hover:scale-110 hover:rotate-12 transition-transform duration-300"
+              className="hover:scale-110 hover:rotate-12 transition-transform duration-300 "
             />
           </div>
 
